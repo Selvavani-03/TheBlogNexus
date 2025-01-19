@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogWebsite</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- home section -->
+       <!-- Navbar -->
+       <div class="navbar">
+        <div class="logo">The<span>BlogNexus</span></div>
+   
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Blog.html">Blog</a>
+            <a href="note-taking.html">Note Taking</a>
+            <a href="Text-editor.html">Text Editor</a>
+            <a href="contact.html">Contact</a>
+        </div>
+           
+    </div>
+   <!-- text editor -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <div class="edit">
+    <h3>Text Editor</h3> 
+   <div class="editor-container">
+    <div class="toolbar">
+     <ul class="toollist">
+        <li class="tool">
+            <button type="button" data-command="bold" class="tool-btn">
+                <i class = 'fas fa-bold'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="italic" class="tool-btn">
+                <i class = 'fas fa-italic'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="underline" class="tool-btn">
+                <i class = 'fas fa-underline'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="justifyleft" class="tool-btn">
+                <i class = 'fas fa-align-left'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="justifycenter" class="tool-btn">
+                <i class = 'fas fa-justifycenter'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="insertOrderedList" class="tool-btn">
+                <i class = 'fas fa-list-ol'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="insertUnorderedList" class="tool-btn">
+                <i class = 'fas fa-=list-ul'></i>
+            </button>
+        </li>
+        <li class="tool">
+            <button type="button" data-command="createlink" class="tool-btn">
+                <i class = 'fas fa-link'></i>
+            </button>
+        </li>
+     </ul>
+    </div>
+
+    <div id="editor" class="editor-content" contenteditable="true">
+        </div>
+    </div>
+    <button>Send</button>
+        </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

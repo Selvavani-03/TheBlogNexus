@@ -1,0 +1,672 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+}
+.navbar {
+    display: flex;
+   
+    justify-content: space-between; 
+    align-items: center;
+    font-size:2.4rem;
+    padding: 1rem;
+    font-weight: 200rem;
+    background: #f8c50e;
+    color: black; 
+}
+
+
+
+.logo span{
+    color: rgba(104, 4, 44, 0.947);
+    font-style:italic;
+}
+
+.navbar a {
+    color:black;
+    margin:2rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.navbar .menu {
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    color: rgba(104, 4, 44, 0.947);
+    text-decoration: underline;
+}
+
+
+/* Hamburger Menu Styling */
+
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+     font-weight: 200; 
+}
+
+.menu{
+    color: var(--text-color, #ccc); 
+}
+
+/* search bar css start */
+
+.search{
+    background-color: rgb(236, 214, 135);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.searching{
+    width:400px;
+    max-width: 80%;
+    font-size: 1rem;
+    padding:0.5rem;
+    border-radius: 10px;
+
+   
+}
+
+.search > button{
+    margin-left: .5rem;
+    font-size: 1rem;
+    background-color:black; 
+    color:white;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.search  > button:hover{
+    background-color:#f8c50e;
+}
+
+/* main page css */
+
+.main{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img2.webp);
+    background-size: cover;
+    height:85vh;
+    
+    
+
+}
+
+
+.main > h1{
+    color: black;
+    font-size: 4rem;
+    padding-top: 1rem;
+    text-align:center;
+
+}
+
+h1:hover{
+    color: rgba(104, 4, 44, 0.947);
+}
+
+.main > h2{
+    color: black;
+   font-size: 2rem;
+   padding-top: 2rem;
+}
+h2:hover{
+    color: rgba(104, 4, 44, 0.947);
+}
+
+.main > button{
+    background-color:rgba(104, 4, 44, 0.947);
+    font-size: 2rem;
+    margin-top: 1rem;
+    cursor:pointer;
+    padding:0.5rem;
+    border-radius: 10px;
+}
+
+button > a{
+    text-decoration: none;
+    color:white;
+}
+
+/* AboutUs start */
+.content-left{
+    background-color: burlywood;
+    display: flex;
+    text-align: center;
+    height:85vh;
+    
+}
+
+.images3{
+    
+    height:10rem;
+    width:10rem;
+}
+
+h3{
+   text-align:center;
+   justify-content: center;
+   align-items: center;
+   font-size:2.5rem;
+   padding-top:2rem;
+   margin-left:5rem;
+} 
+
+.para{
+    border: .3rem solid grey;
+    background-color:rgb(248, 246, 151) ;
+    margin-top: 10rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    padding:2rem;
+    font-size:1.7rem;
+    font-style: italic;
+    text-align:start;
+    border-radius: 80px;
+    margin-left:2.5rem;
+
+}
+
+
+/* blogpost start */
+
+.blog{
+    background-color: #f7e7ac;
+    
+}
+.blog-heading{
+    color: black;
+    padding-top: 2rem;
+    align-self: center;
+    margin-left: 40rem;
+    font-size: 2rem;
+}
+
+.blog-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.blog-box{
+    width:350px;
+    background-color:#ffffffff;
+    border:1px solid #ececec;
+    margin:20px;
+}
+
+.blogimages{
+    width:100%;
+    height:auto;
+}
+
+.blogimages img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.blogtext{
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+}
+
+.blogtext span{
+    color:#610427;
+    font-size:1em;
+}
+
+.blogtext .title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#272727;
+}
+
+.blogtext .title:hover{
+    color:#0f6e8e;
+    transition: all ease 0.3s;
+}
+
+.blogtext p{
+    color:#9b9b9bc8;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    line-clamp: 7;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:20px 0px;
+}
+
+.blogtext a{
+    color:black;
+
+}
+
+.blogtext a:hover{
+    transition: all ease 0.3s;
+}
+
+
+
+/* NoteTaking start */
+
+.note{
+ 
+    background-color:burlywood;
+    height:85vh;
+    justify-content: space-between;
+}
+
+.images4{
+    height:30rem;
+    width:45rem;
+    padding-top:1.5rem;
+    margin-left:1.5rem;
+   
+    
+}
+
+.msg{
+    padding-top:1rem;
+    margin-left:3.5rem;
+    border-radius: 2rem;
+    border:.5rem solid #f8c50e;
+    
+}
+
+.note > button{
+    background-color:grey;
+    color:black;
+    font-size: 2rem;
+    margin-top: 0.23rem;
+    width:10%;
+    margin-left: 70rem;
+    cursor:pointer;
+    border-radius: 10px;
+
+}
+
+.note > button:hover{
+    background-color: rgb(34, 31, 28);
+    color:white
+}
+
+
+/* TextEditor start */
+
+/* General container styling */
+.edit{
+    background-color: #f7e7ac;
+    height:85vh;
+}
+
+.edit >button{
+    font-size: 2.5rem;
+    margin-left: 40rem;
+    width:10%;
+    border-radius:10px;
+}
+
+.edit >button:hover{
+    background-color: rgb(34, 31, 28);
+    color:white;
+    cursor:pointer;
+
+}
+
+
+.editor-container {
+  
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* Toolbar styling */
+.toolbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.toollist {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tool {
+    margin-right: 10px;
+}
+
+.tool-btn {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.tool-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.tool-btn:active {
+    background-color: #e0e0e0;
+}
+
+/* Editor content styling */
+.editor-content {
+    min-height: 350px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+}
+
+.editor-content:focus {
+    border: none;
+    outline: none;
+}
+
+/* Icons styling */
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+/* Scrollbar styling for the editor */
+.editor-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.editor-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.editor-content::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+
+
+/* contact start */
+/* contact section styling */
+
+footer {
+    background-color:rgb(236, 214, 135);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    height:85vh;
+    width:100%;
+}
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* @media query for responsive website */
+
+
+
+/* Medium screen  for Tablet*/
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none; /* Hide menu for smaller screens */
+    }
+
+    .hamburger {
+        display: block; 
+        size: 1rem;/* Show hamburger icon */
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background-color:#eee;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    .searching {
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    .main > h1 {
+        font-size: 3rem;
+    }
+
+    .main > h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .images3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .para {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: center;
+    }
+
+    .blog-box {
+        width: 90%;
+    }
+
+    .images4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .msg{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .editor-content {
+        font-size: 1rem;
+    }
+}
+
+/* Small screen  for mobile phones */
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu {
+        display: block; /* Show menu items vertically */
+        flex-direction: column;
+    }
+
+    .navbar .menu a {
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background-color:#eee;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar input[type="checkbox"]:checked ~ .menu-items {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+    
+
+    .searching {
+        width: 90%;
+    }
+
+    .main {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .content-left {
+        margin: 1rem;
+    }
+
+    .images3 {
+        width: 100%;
+    }
+
+    .para {
+        margin: 1rem;
+    }
+
+    .blog-container {
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: center;
+    }
+
+    .blog-box {
+        width: 90%;
+    }
+
+    .images4{
+        width:100%;
+    }
+
+    .msg{
+        margin: 1rem;
+        
+    }
+    
+
+    .editor-content {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
